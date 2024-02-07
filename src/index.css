@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(img.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  background: transparent;
+  width: 450px;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+}
+
+.input-field input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  margin: 15px 0;
+  padding: 15px 5px;
+  border-radius: 50px;
+  color: aliceblue;
+}
+
+.input-field {
+  position: relative;
+}
+.input-field input::placeholder {
+  color: white;
+  position: absolute;
+  left: 9px;
+}
+
+.input-field i {
+  position: absolute;
+  right: 25px;
+  top: 45px;
+  transform: translateY(-60%);
+}
+
+.forgot-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.forgot-link a:hover {
+  text-decoration: underline;
+  color: rgb(215, 220, 224);
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  color: black;
+  border-radius: 25px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.register-link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.register-link a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+  color: rgb(215, 220, 224);
+}
+
+.gend {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.verify-merchant {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 920px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 475px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 390px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 350px;
+  }
+}
